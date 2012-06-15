@@ -1,0 +1,24 @@
+Ipsum is a _filler-text_ generator much like the well known <em>Lorem Ipsum</em>. Ipsum can be used in any applications that require text from console applications to websites. For more information {visit Ipsum's website}[http://www.darkarts.co.za/ipsum].
+
+== Installation
+
+  gem install ipsum
+
+== Usage
+
+  require 'ipsum'
+  puts 15.sentences
+
+== Examples
+
+=== Plain text
+
+  puts 50.sentences
+  puts 3.sentences
+
+=== Web templates
+
+This can be used within web templates like Erb, Erubis etc
+
+  <p><%= 7.sentences %></p>
+
