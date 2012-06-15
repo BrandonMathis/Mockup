@@ -1,9 +1,28 @@
 !!!html
 %html
-  %head Mockup
-  =stylesheet_link_tag 'application', media: 'all'
-  =javascript_include_tag 'application'
-  =csrf_meta_tags
+  %head
+    %title
+      Mockup
+    =stylesheet_link_tag 'application', media: 'all'
+    =javascript_include_tag 'application'
+    =csrf_meta_tags
 
   %body
+    =render 'pages/navbar'
+  %header#header
+    .container
+      %h1 MIMOSA
+      %section#banner
+        .row
+          .span6
+            =10.sentences
+          .span6
+            =10.sentences
+  %section#blurb
+    .container
+      .row
+        .span12
+          %h2 What Is Mimosa
+          =20.sentences
+  .container
     =yield
