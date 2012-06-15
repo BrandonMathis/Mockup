@@ -1,8 +1,8 @@
 %section#main
   .row
     .left-sidebar.span3
-      %h1 Left Sidebar
-      =10.sentences
+      -3.times do
+        =render 'pages/block'
     .main-content.span9
       %h1 Main Content
       %article
