@@ -10,20 +10,27 @@
 
   %body
     =render 'pages/navbar'
-  %header#header
-    .container
-      %h1 MIMOSA
-      %section#banner
+  #top
+    %header#header
+      .container
+        %section#banner
+          .row
+            .span6
+              %h2 Join Mimosa Today
+              %p
+                Join MIMOSA today and become insturmental in creating and shaping the technology.
+              %p
+                Exchange information through exclusive e-mail discussion lists, meet and communicate with your peers at Division Technical Symposiums, and gain access to exclusive member web sites.
+              %p
+                =button_to "Join Now", "#", class: 'btn, btn-inverse btn-large'
+            .span6
+              #logo=image_tag 'mimosa-logo.png'
+    %section#blurb
+      .container
         .row
-          .span6
-            =10.sentences
-          .span6
-            =10.sentences
-  %section#blurb
-    .container
-      .row
-        .span12
-          %h2 What Is Mimosa
-          =20.sentences
+          .span12
+            %h2 What Is Mimosa
+            %p
+              MIMOSA is a not-for-profit trade association dedicated to developing and encouraging the adoption of open information standards for Operations and Maintenance in manufacturing, fleet, and facility environments. MIMOSA's open standards enable collaborative asset lifecycle management in both commercial and military applications.
   .container
     =yield
