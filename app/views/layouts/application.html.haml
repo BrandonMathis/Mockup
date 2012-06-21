@@ -13,6 +13,7 @@
   #top
     %header#header
       .container
+        #logo=image_tag 'mimosa-logo.png'
         %section#banner
           .row
             .span6
@@ -24,7 +25,7 @@
               %p
                 =button_to "Join Now", "#", class: 'btn, btn-inverse btn-large'
             .span6
-              #logo=image_tag 'mimosa-logo.png'
+              =render 'pages/carousel'
     %section#blurb
       .container
         .row

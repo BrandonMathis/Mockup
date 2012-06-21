@@ -1,0 +1,15 @@
+#myCarousel.carousel.slide
+  .carousel-inner
+    .active.item
+      %h2 Item 1
+      %p=10.sentences
+    .item
+      %h2 Item 2
+      %p=10.sentences
+    .item
+      %h2 Item 3
+      %p=10.sentences
+  %a.carousel-control.left{:href=>'#myCarousel', 'data-slide' => 'prev'}
+    &lsaquo;
+  %a.carousel-control.right{:href=>'#myCarousel', 'data-slide' => 'next'}
+    &rsaquo;

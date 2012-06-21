@@ -2,10 +2,26 @@
 // @import 'bootstrap-responsive'
 @import compass/css3.scss
 
-#top, #top p
+$mimosa-green: #0B6E2A
 
+#top, #top p
   font-size: 17px
   line-height: 1.3em
+
+.carousel
+  font-size: 14px
+  line-height: 1.3em
+
+.carousel .carousel-control
+  top: 100%
+  width: 0px
+  height: 0px
+  +border-radius(0px)
+  border: none
+
+.carousel:hover .carousel-control
+  display: inherit
+
 #logo
   padding: 10px
   text-align: center
@@ -14,9 +30,12 @@
   .btn-large
     padding: 10px 30px
   padding-top: 80px
-  background: transparent url('feature_bg.png') center bottom no-repeat
   background-color: #0B6E2A
+  +background-image(linear-gradient($mimosa-green, #064018))
   color: white
+
+#banner
+  height: 320px
 
 #blurb
   background-color: #2F2F2F
