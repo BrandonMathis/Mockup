@@ -8,6 +8,10 @@ $mimosa-green: #0B6E2A
   font-size: 17px
   line-height: 1.3em
 
+#mimosa_carousel
+  .item > h2
+    text-align: center
+
 .carousel
   font-size: 14px
   line-height: 1.3em
@@ -16,7 +20,7 @@ $mimosa-green: #0B6E2A
   .left
     left: 0
   .carousel-control
-    top: 100%
+    top: 0%
     width: 0px
     height: 0px
     +border-radius(0px)
@@ -43,6 +47,15 @@ $mimosa-green: #0B6E2A
   color: #C6C6C6
   +single-box-shadow
 
+.navbar .open_om > li > a
+  padding: 0px 0px 0px
+  margin: 0px
+  line-height: 1em
+
+.left-sidebar li
+  margin: 0px
+  list-style: none
+
 .navbar
   +single-box-shadow
 
@@ -56,3 +69,4 @@ a:hover
   +single-text-shadow
   color: orange
   text-decoration: none
+
