@@ -4,9 +4,35 @@
 
 $mimosa-green: #0B6E2A
 
+//
+// NAVBAR
+//
+.navbar
+  +single-box-shadow
+
+.navbar .open_om > li > a
+  padding: 0px 0px 0px
+  margin: 0px
+  line-height: 1em
+
+//
+// HEADER
+//
 #top, #top p
   font-size: 17px
   line-height: 1.3em
+
+#logo
+  padding: 10px
+  text-align: center
+
+#header
+  .btn-large
+    padding: 10px 30px
+  padding-top: 80px
+  background-color: #0B6E2A
+  +background-image(linear-gradient($mimosa-green, #064018))
+  color: white
 
 #mimosa_carousel
   .item > h2
@@ -30,39 +56,39 @@ $mimosa-green: #0B6E2A
 .carousel:hover .carousel-control
   display: inherit
 
-#logo
-  padding: 10px
-  text-align: center
-
-#header
-  .btn-large
-    padding: 10px 30px
-  padding-top: 80px
-  background-color: #0B6E2A
-  +background-image(linear-gradient($mimosa-green, #064018))
-  color: white
-
+//
+// WHAT IS MIMOSA
+//
 #blurb
   background-color: #2F2F2F
   color: #C6C6C6
   +single-box-shadow
 
-.navbar .open_om > li > a
-  padding: 0px 0px 0px
-  margin: 0px
-  line-height: 1em
+//
+// FRONTPAGE
+//
+#mimosa_groups .block > button
+  float: right
 
+.title
+  font-weight: bold
+  font-size: 14px
+  line-height: 27px
+
+.block > ul > li
+  list-style: none
+
+//
+// SIDEBAR
+//
 .left-sidebar li
   margin: 0px
   list-style: none
 
-.navbar
-  +single-box-shadow
 
-.container,
-.container-fluid
-  padding: 10px
-
+//
+// GENERIC/HTML
+//
 a
   color: green
 a:hover
@@ -70,3 +96,6 @@ a:hover
   color: orange
   text-decoration: none
 
+.container,
+.container-fluid
+  padding: 10px
