@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.6'
 
-gem 'pg'
+gem 'sqlite3'
 gem 'haml'
 gem 'ipsum'
 gem 'high_voltage'
